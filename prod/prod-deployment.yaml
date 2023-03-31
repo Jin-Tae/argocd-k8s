@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frond-ends
+  name: prod-deployment-nginx
 spec:
   replicas: 1
   selector:
@@ -22,7 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: front-end-svc
+  name: prod-deployment-svc
 spec:
   type: NodePort
   selector:
